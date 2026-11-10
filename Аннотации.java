@@ -1,12 +1,12 @@
 public class AnnotationDemo {
     public static void main(String[] args) {
-        Child_29 c = new Child_29();
+        Child c = new Child();
         c.show();
 
-        OldClass_29 old = new OldClass_29();
+        OldClass old = new OldClass();
         old.oldMethod();
 
-        WarningDemo_29 w = new WarningDemo_29();
+        WarningDemo w = new WarningDemo();
         w.methodWithWarning();
     }
 }
@@ -17,7 +17,7 @@ class Parent {
     }
 }
 
-class Child extends Parent_29 {
+class Child extends Parent {
     @Override
     void show() {
         System.out.println("Child show");
